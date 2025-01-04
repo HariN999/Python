@@ -21,12 +21,25 @@ print(c)
 c=['a','b','c','d','e','f']
 print(c[1:3])
 
-print(c[0:-1:1])
 
-a=[2,2.4,23,4]
-print(a)
-b = a
-print(b)
+def predict_marks(hours, age):
+
+    if hours < 1:
+        if age < 16:
+            return "Below average" 
+        else:
+            return "Predicted marks: Poor"
+    elif hours >= 1 and hours < 4:
+        if age < 16:
+            return "Predicted marks: Average"
+        else:
+            return "Predicted marks: Good"
+    else:
+        if age < 16:
+          return "Predicted marks: Above average"
+        else:
+            return "Predicted marks: Excellent"
+print(predict_marks(3,14)
 
 
 
